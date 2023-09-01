@@ -1,5 +1,7 @@
 # Digit Enigma
 
+Check out the live demo: [Digit Enigma Demo](https://curious-moxie-86ac32.netlify.app/)
+
 ![Digit Enigma](/public/screenshot.png)
 
 **Digit Enigma** is a web-based number puzzle game built with React and Next.js. Test your logic and deduction skills by trying to crack the hidden four-digit code.
