@@ -70,10 +70,6 @@ html {
   font-size: large;
 }
 
-.messageContainer {
-  padding: 4rem;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

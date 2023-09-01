@@ -104,27 +104,28 @@ const Page: React.FC = () => {
     setGuessedNumber(["", "", "", ""]);
     setHoldingNumberGenerated(true);
   };
-
   if (!holdingNumberGenerated) {
     let message = "";
     const attempts = guessHistory.length;
 
     if (attempts < 4) {
-      message = `Wow! You solved it in ${attempts} attempts. Impressive!`;
+      message = `Wow! You found the number "${holdingNumber}" in ${attempts} attempts. Impressive!`;
     } else if (attempts >= 4 && attempts <= 8) {
-      message = `Great job! It took you only ${attempts} tries to find the number.`;
+      message = `Great job! It took you only ${attempts} tries to find the number "${holdingNumber}".`;
     } else if (attempts > 8 && attempts <= 12) {
-      message = `Congratulations! You found the number in just ${attempts} attempts.`;
+      message = `Congratulations! You found the number "${holdingNumber}" in just ${attempts} attempts.`;
     } else {
-      message = `Hmm! You found the number in ${attempts} attempts. Better next time, huh?`;
+      message = `Hmm! You found the number "${holdingNumber}" in ${attempts} attempts. Better next time, huh?`;
     }
 
     return (
-      <div className="container messageContainer">
-        <p className="message">{message}</p>
-        <button className="messageBtn" onClick={handleNewGame}>
-          Play New Game
-        </button>
+      <div className="app">
+        <div className="container">
+          <p className="message">{message}</p>
+          <button className="messageBtn" onClick={handleNewGame}>
+            Play New Game
+          </button>
+        </div>
       </div>
     );
   }
