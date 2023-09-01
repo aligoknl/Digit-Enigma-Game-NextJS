@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgb(255, 221, 0);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 157, 0);
+  margin: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 45rem;
+  width: 100%;
+}
+
+.boxes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.box {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 0.3rem;
+}
+
+.btn,
+.messageBtn {
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.7rem;
+  font-size: large;
+  background-color: rgb(37, 37, 114);
+  color: white;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+.newGameBtn {
+  background-color: blueviolet;
+  padding: 0 1.5rem;
+}
+.messageBtn {
+  background-color: rgb(197, 31, 120);
+}
+
+.message {
+  font-size: large;
+}
+
+.messageContainer {
+  padding: 4rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.feedback {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  min-width: 20rem;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.feedback:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 20rem;
+  max-width: 20rem;
+}
+
+.table thead tr {
+  background-color: #980068;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr td {
+  font-size: large;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #980019;
+}
+
+.icon {
+  font-size: small;
+}
